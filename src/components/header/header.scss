@@ -1,0 +1,76 @@
+/*---------------------
+  Header Desktop
+-----------------------*/
+@import "../../variable";
+
+.header {
+  background-color: $c-white;
+
+  &__menu-mobile {
+    display: none;
+  }
+
+  .container {
+    @include flex(space-between, center);
+  }
+
+  &__logo {
+    padding: 31px 0;
+
+    span {
+      color: $c-primary;
+    }
+  }
+
+  &__profile {
+    display: inline-flex;
+    align-items: center;
+  }
+}
+
+.menu-header {
+  min-width: 300px;
+  margin-right: 30px;
+
+  &__list {
+    @include flex(space-between, center);
+    list-style: none;
+    padding-left: 0;
+
+    &__item {
+
+      &.active {
+        a {
+          color: $c-primary;
+        }
+      }
+    }
+  }
+}
+
+.profile {
+  &__notification {
+    position: relative;
+    margin-right: 25px;
+    color: #fff;
+    font-size: 34px;
+    cursor: pointer;
+  }
+
+  &__cart {
+    cursor: pointer;
+    margin-right: 20px;
+  }
+
+  &__avatar {
+    cursor: pointer;
+
+    img {
+      height: 50px;
+      width: 50px;
+      overflow: hidden;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+  }
+}
