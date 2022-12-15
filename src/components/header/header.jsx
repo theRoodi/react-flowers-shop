@@ -1,16 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import user from "../../assets/svg/user.svg";
+import cartShop from "../../assets/svg/cart-shopping.svg";
 import { PATHS } from "../../utils/urls";
 
-import './header.scss';
+import "./header.scss";
 
 export const Header = () => {
   return (
     <header className="header">
       <div className="container">
         <div className="header__logo">
-          <span>Flower</span> Shop
+          <Link to={PATHS.home}><span>Flower</span>Shop</Link>
         </div>
         <nav className="header__menu menu-header">
           <ul className="menu-header__list">
@@ -42,15 +44,22 @@ export const Header = () => {
             </button>
           </Link> */}
 
-          <div className="profile__cart">
-            <img src="" alt="cart" />
+          <div className="profile__avatar">
+            <Link to={PATHS.profile}>
+              <img
+                src={user}
+                alt="avatar"
+              />
+            </Link>
           </div>
 
-          <div className="profile__avatar">
-            <img
-              src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/06/28/14/avatar.jpg?width=50"
-              alt="avatar"
-            />
+          <div className="profile__cart">
+            <Link to={PATHS.cart}>
+              <img
+                src={cartShop}
+                alt="cart"
+              />
+            </Link>
           </div>
         </div>
 
