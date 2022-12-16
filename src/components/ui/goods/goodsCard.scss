@@ -1,12 +1,13 @@
 @import "../../../_variable.scss";
 
+.flexContainer {
+    display: flex;
+}
+
 .goodsCard {
     padding: 16.96px 17.9px 14.16px;
     background-color: $c-white;
     border-radius: $radius-primary;
-    width: 287.38px;
-
-
 
     &__img {
         width: 251.57px;
@@ -27,7 +28,8 @@
     }
 
     &__addToCard {
-        padding-right: 12.76px;
+        position: relative;
+        left: 119px;
         color: $c-primary;
     }
 }

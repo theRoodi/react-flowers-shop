@@ -1,16 +1,17 @@
 import React from "react";
-
+import "./pagesStyles/catalog.scss"
 import { GoodsCard } from "../ui/goods/goodsCard";
+import { Bar } from "../ui/bar/bar";
 
 export const Catalog = () => {
+  let arr = Array(10).fill('');
+  let content = arr.map((elem) => <GoodsCard />)
   return (
-    <section
-      id="shop"
-      className="shop"
-    >
-      <div className="shop__category">This is SHOP</div>
-
-      <GoodsCard />
-    </section>
+    <>
+      <Bar />
+      <div className="catalog">
+        {content}
+      </div>
+    </>
   );
 };
