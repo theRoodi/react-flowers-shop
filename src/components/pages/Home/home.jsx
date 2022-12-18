@@ -1,17 +1,26 @@
 import React from "react";
-import "./home.css";
+import "./home.scss";
 import { Post } from "./Post/post";
-import { Footer } from "../../footer/footer";
+import { Footer } from "../../Footer/footer";
+import { GoodsCard } from "../../ui/goods/goodsCard";
 
 export const Home = () => {
   return (
     <div className="container">
       <div>Best selers</div>
       <div className="row">
-        <div className="col-3">picture</div>
-        <div className="col-3">picture</div>
-        <div className="col-3">picture</div>
-        <div className="col-3">picture</div>
+        <div className="col-3">
+          <GoodsCard />
+        </div>
+        <div className="col-3">
+          <GoodsCard />
+        </div>
+        <div className="col-3">
+          <GoodsCard />
+        </div>
+        <div className="col-3">
+          <GoodsCard />
+        </div>
       </div>
       <div>Latest posts</div>
       <div className="row">
