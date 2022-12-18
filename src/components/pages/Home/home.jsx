@@ -1,7 +1,7 @@
 import React from "react";
 import "./home.css";
 import { Post } from "./Post/post";
-import { Footer } from "../../Footer/footer";
+import { Footer } from "../../footer/footer";
 
 export const Home = () => {
   return (

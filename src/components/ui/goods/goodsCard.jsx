@@ -12,7 +12,7 @@ export const GoodsCard = () => {
       <img className="goodsCard__img" src={flower} alt="flower is lost.." />
       <h6 className="goodsCard__name">Flower's Name</h6>
       <span className="goodsCard__price">0$</span>
-      <a href="#" className="goodsCard__addToCard"><img
+      <a href="/" className="goodsCard__addToCard"><img
                 src={cartShop}
                 alt="cart"
               />Add to cart</a>
