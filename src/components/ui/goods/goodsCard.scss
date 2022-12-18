@@ -8,6 +8,12 @@
     padding: 16.96px 17.9px 14.16px;
     background-color: $c-white;
     border-radius: $radius-primary;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 1px $c-primary;
+
+    &:hover {
+        box-shadow: 0 0 1rem $c-primary;
+    }
 
     &__img {
         width: 251.57px;
@@ -28,6 +34,9 @@
     }
 
     &__addToCard {
+        background-color: #ffffff00;
+        border: none;
+        outline: none;
         position: relative;
         left: 119px;
         color: $c-primary;
