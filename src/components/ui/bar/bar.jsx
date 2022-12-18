@@ -4,11 +4,11 @@ import "./bar.scss"
 
 
 let openFilterNav = () => {
-  document.querySelector(".filterNav").style.display = "block";
+  document.querySelector(".filterNav").style.width = "100vw";
 }
 
 let closeFilterNav = () => {
-  document.querySelector(".filterNav").style.display = "none";
+  document.querySelector(".filterNav").style.width = "0";
 }
 
 const FilterNav = () => {
