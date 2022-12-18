@@ -1,6 +1,8 @@
 import React from "react"
 import "./bar.scss"
 
+
+
 let openFilterNav = () => {
   document.querySelector(".filterNav").style.display = "block";
 }
@@ -9,22 +11,22 @@ let closeFilterNav = () => {
   document.querySelector(".filterNav").style.display = "none";
 }
 
-
-
-
-
-
 const FilterNav = () => {
   return (
     <>
-      <div class="filterNav">
-        <div class="filterNav-content">
-          <div class="modal-header">
-            <span class="close" onClick={closeFilterNav}>x</span>
+      <div className="filterNav">
+        <div className="filterNav__content">
+          <span className="filterNav__close" onClick={closeFilterNav}>x</span>
+          <h2>Filters</h2>
+          <div className="filterNav__body">
+
+            <section className="price">
+              <h4>Price:</h4>
+              <input type="range" multiple="2" min="1" max="100" className="slider" id="myRange" />
+            </section>
+
           </div>
-          <div class="modal-body">
-            <p>Some text in the Modal Body</p>
-          </div>
+          <button className="apply" onClick={closeFilterNav}>Apply</button>
         </div>
       </div>
     </>

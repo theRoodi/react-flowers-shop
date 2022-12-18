@@ -1,74 +1,163 @@
 @import "../../../_variable.scss";
 
 
-//---------------------------------------
-.filterNav {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    -webkit-animation-name: slideIn;
-    -webkit-animation-duration: 0.4s;
-    animation-name: slideIn;
-    animation-duration: 0.4s
+
+//-------------------------------------
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;  
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
 }
 
-/* Modal Content */
-.filterNav-content {
-    position: fixed;
-    bottom: 0;
-    background-color: #fefefe;
-    width: 30vw;
-    height: 100%;
-    -webkit-animation-name: slideIn;
-    -webkit-animation-duration: 0.4s;
-    animation-name: slideIn;
-    animation-duration: 0.4s
-}
-
-/* The Close Button */
-.close {
-    color: rgb(77, 52, 52);
-    float: left;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: #000;
-    text-decoration: none;
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+    background: $c-primary;
     cursor: pointer;
 }
 
-.modal-body {padding: 2px 16px;}
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: $c-primary;
+    cursor: pointer;
+}
 
-/* Add Animation */
+//-------------------------------------
+.filterNav {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s;
+
+    &__content {
+        position: fixed;
+        bottom: 0;
+        background-color: $c-white;
+        width: 30vw;
+        height: 100%;
+        -webkit-animation-name: slideIn;
+        -webkit-animation-duration: 0.4s;
+        animation-name: slideIn;
+        animation-duration: 0.4s
+    }
+
+    &__close {
+        position: relative;
+        left: 31vw;
+        top: 1vh;
+        color: $c-primary;
+        float: left;
+        font-size: 32px;
+        font-weight: bold;
+        transition: color 0.3s ease;
+
+        &:hover,
+        &:focus {
+            color: $c-white;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+
+    &__body {
+        padding: 2vh 3vw;
+    }
+
+    h4, h2 {
+        padding-top: 1vh;
+        color: $c-primary;
+    }
+    
+
+
+    .apply {
+        font-size: $fs-h2;
+        color: $c-white;
+        position: absolute;
+        left: 2vw;
+        bottom: 3vh;
+        background-color: $c-primary;
+        border-radius: $radius-primary;
+        width: 26vw;
+        padding: 5px;
+        border: solid 1px;
+        outline: none;
+        transition: background-color 0.2s ease, color 0.2s ease,  border 0.2s ease;
+        
+
+        &:hover, &:active {
+            background-color: $c-white;
+            color: $c-primary;
+            border-color: $c-primary;
+        }
+    }
+    
+}
+
 @-webkit-keyframes slideIn {
-    from {bottom: -300px; opacity: 0} 
-    to {bottom: 0; opacity: 1}
+    from {
+        bottom: -300px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1
+    }
 }
 
 @keyframes slideIn {
-    from {bottom: -300px; opacity: 0}
-    to {bottom: 0; opacity: 1}
+    from {
+        bottom: -300px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1
+    }
 }
 
 @-webkit-keyframes fadeIn {
-    from {opacity: 0} 
-    to {opacity: 1}
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
 }
 
 @keyframes fadeIn {
-    from {opacity: 0} 
-    to {opacity: 1}
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
 }
-//---------------------------------------------
+
 .bar {
     margin: 0 auto;
     display: flex;
@@ -81,15 +170,13 @@
     height: 96px;
     background-color: $c-white;
     border-radius: $radius-primary;
-    
-    
-    &__filter {
 
-    }
+
+    &__filter {}
 
     &__search {
         margin: 0 5px;
-        
+
         input {
             font-size: $fs-text;
             padding: 17px 29px 18px;
@@ -100,7 +187,5 @@
         }
     }
 
-    &__sort {
-        
-    }
+    &__sort {}
 }

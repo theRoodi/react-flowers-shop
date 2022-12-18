@@ -91,3 +91,16 @@ svg {
   font-size: $fs-h6;
   line-height: 1.4;
 }
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: $c-line; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: $c-primary; 
+  border-radius: $radius-primary;
+}
