@@ -1,7 +1,7 @@
 import React from "react";
 import "./goodsCard.scss"
 import flower from "../../../assets/img/selected-flower/flower.png";
-import cartShop from "../../../assets/svg/cart.svg";
+import cartShop from "../../../assets/svg/cart-shopping.svg";
 
 
 export const GoodsCard = () => {

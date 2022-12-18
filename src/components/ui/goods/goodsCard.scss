@@ -38,7 +38,12 @@
         border: none;
         outline: none;
         position: relative;
-        left: 119px;
+        left: 118px;
         color: $c-primary;
+
+        img {
+            height: 1em;
+            margin-right: 7px;
+        }
     }
 }
