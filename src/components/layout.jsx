@@ -1,6 +1,6 @@
 import { Outlet, useNavigation } from "react-router-dom";
 
-import { Footer } from "./Footer/footer";
+import { Footer } from "./footer/footer";
 import { Loader } from "./ui/loader/loader";
 import { Header } from "./header/header";
 
@@ -10,7 +10,7 @@ export const Layout = () => {
   return (
     <div className="wrapper">
       <Header />
-      {state === "loading" ? <Loader /> : null}
+      {state !== "idle" ? <Loader /> : null}
       <main className="page">
         <Outlet></Outlet>
       </main>

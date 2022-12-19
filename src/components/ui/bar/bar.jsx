@@ -4,11 +4,11 @@ import "./bar.scss"
 
 
 let openFilterNav = () => {
-  document.querySelector(".filterNav").style.width = "100vw";
+  document.querySelector(".filterNav").style.display = "block";
 }
 
 let closeFilterNav = () => {
-  document.querySelector(".filterNav").style.width = "0";
+  document.querySelector(".filterNav").style.display = "none";
 }
 
 const FilterNav = () => {
@@ -22,7 +22,7 @@ const FilterNav = () => {
 
             <section className="price">
               <h4>Price:</h4>
-              <input type="range" multiple="2" min="1" max="100" className="slider" id="myRange" />
+              <input type="range" min="1" max="100" className="slider" id="myRange" />
             </section>
 
           </div>

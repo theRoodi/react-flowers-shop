@@ -12,8 +12,10 @@
     box-shadow: 0 2px 1px $c-primary;
 
     &:hover {
+        transform:translateY(-8px);
         box-shadow: 0 0 1rem $c-primary;
     }
+
 
     &__img {
         width: 251.57px;
@@ -34,7 +36,7 @@
     }
 
     &__addToCard {
-        background-color: #ffffff00;
+        background-color: #ffffffdc;
         border: none;
         outline: none;
         position: relative;
