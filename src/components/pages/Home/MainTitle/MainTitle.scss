@@ -1,0 +1,43 @@
+@import "../../../../variable";
+
+.main-title-container {
+  padding-top: 73px;
+  padding-bottom: 122px;
+  display: flex;
+}
+.main-title-text {
+}
+
+.main-title-h2 {
+  padding-bottom: 57px;
+  font-size: 60px;
+  font-weight: 400;
+}
+
+.main-title-p {
+  color: $c-home-bg;
+  padding-bottom: 51px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.browse-btn {
+  background-color: $c-primary;
+  color: $c-white;
+  border-radius: 5px;
+  border: none;
+  width: 104px;
+  height: 40px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.main-title-img {
+  max-width: 636px;
+  margin-left: auto
+}
+
+.main-title-img img {
+  flex: 0 0;
+  padding: 0 0 20px 20px;
+}
