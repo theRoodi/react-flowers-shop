@@ -1,1 +1,45 @@
 @import "../../../../variable";
+.post {
+  background-color: #ffffff;
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 0;
+}
+.post_header {
+  padding: 10px;
+}
+.post_header-data {
+  padding-top: 11px;
+  padding-right: 10px;
+  text-align: right;
+  color: #838383;
+}
+.post_image img {
+  width: 100%;
+}
+.post_description h6 {
+  padding-top: 16.91px;
+  padding-left: 10px;
+  font-size: 20px;
+  font-weight: 400;
+}
+.post_description p {
+  padding-top: 5px;
+  padding-left: 10px;
+  color: #838383;
+  line-height: 25px;
+}
+.post_footer div {
+  text-align: left;
+  font-size: 12px;
+  color: #838383;
+  padding-bottom: 15px;
+}
+.post_footer button {
+  background-color: #ffffff;
+  border: none;
+  font-size: 18px;
+  font-weight: 400;
+  float: right;
+  padding-right: 25px;
+}
