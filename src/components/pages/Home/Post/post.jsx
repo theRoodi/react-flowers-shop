@@ -3,7 +3,7 @@ import "./post.scss";
 import postImg from "../../../../assets/img/post-img/postImg.png";
 import ava from "../../../../assets/img/ava/Ava.png";
 import eye from "../../../../assets/svg/eye.svg";
-import hurt from "../../../../assets/svg/hurt.svg";
+import hurt from "../../../../assets/svg/grey_heart.svg";
 
 export const Post = () => {
   return (

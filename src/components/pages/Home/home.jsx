@@ -1,7 +1,7 @@
 import React from "react";
 import "./home.scss";
 import { Post } from "./Post/post";
-import { Footer } from "../../Footer/footer";
+import { Footer } from "../../footer/footer";
 import { GoodsCard } from "../../ui/goods/goodsCard";
 
 let arr = Array(4).fill({ name: "Flower's Name", price: 0 });
